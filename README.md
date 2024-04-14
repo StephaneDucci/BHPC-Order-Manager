@@ -52,11 +52,6 @@ There are a series of NOTE cells that allow the user to take notes and link them
 A status bar has been implemented to provide an immediate view of the order status, what has already been done, and what still needs to be done before shipping.
 
 ORDERED PRODUCTS
-In this section, there is an entry form for entering the references ordered by customers or those received from the supplier.
-It has been designed to be as user-friendly as possible while also considering the possibility of products sold at full price, others at discounted prices, and still others free of charge (FOC).
-It is possible that further improvements will be implemented in the future to make the entry of new shipments even more immediate.
-
-ORDERED PRODUCTS
-- In questa sezione è presente una entry form per l'inserimento delle referenze ordinate dai clienti o quelle ricevute dal fornitore.
-- E' stata studiata per essere il più user friendly possibile e allo stesso tempo considerare la possibilità di prodotti venduti a prezzo pieno, altri a prezzo scontato e ancora altri gratuiti (FOC)
-- E' possibile che in futuro vengano implementati miglioramenti ulteriori per rendere l'inserimento di nuove spedizioni ancora più immediato.
+- In this section, there is an entry form for entering the references ordered by customers or those received from the supplier.
+- It has been designed to be as user-friendly as possible while also considering the possibility of products sold at full price, others at discounted prices, and still others free of charge (FOC).
+- It is possible that further improvements will be implemented in the future to make the entry of new shipments even more immediate.
