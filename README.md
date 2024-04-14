@@ -19,6 +19,7 @@ FUNCTIONS STILL TO IMPLEMENT
 BHPC MANAGER 1.5
 First version stable enough and testable even by third-party users. Below I will describe the working functions of the application.
 The application consists of 5 main TABs that allow you to navigate through the main functions.
+
 CONTROL BOARD - A control center for incoming and outgoing shipments of BHPC products.
 SHIPMENT DETAILS - A panel where you can view and modify the logistical and generic details of an order.
 ORDERED PRODUCTS - Panel where you can enter and/or view the products belonging to the selected order.
