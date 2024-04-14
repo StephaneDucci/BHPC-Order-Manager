@@ -1,43 +1,59 @@
 # BHPC-Manager
-A one stop center to control all the processes for the distribution of BHPC porducts in EU and LATAM.
+It's a one-stop center to oversee a significant portion of the procedures related to the distribution process of our foreign partner's products in Europe and Latin America.
+The currently operational functions (albeit in testing) include:
+- Guided procedure for saving a sales or sampling order (orders related to supplies can also be registered, but some fields are still inconsistent).
+- Ability for the user to input products related to sales/sampling, specifying selling price or if they are F.O.C. (free of charge).
+- Once the products are loaded into the order, it is possible to automatically generate the main documents: PROFORMA INVOICE, PACKING LIST, and MULTIMODAL FORM.
+- Finally, it will be possible to track the order status and numerous other (mostly logistical) parameters useful at the time of drafting periodic reports to be presented to the partner.
 
-FUNZIONI DA IMPLEMENTARE
-- Tenere traccia dello stock di magazzino. Registrati i valori dell'ultimo inventario. Inserendo tutte le movimentazioni in entrata e in uscita si dovrebbero avere sempre aggiornate le disponibilità in stock. Questo permetterebbe all'applicativo di fornire in tempo reale informazioni al management sulle disponibilità.
-- Pulsante SHIP IT. Selezionando un ordine in stato "ALL READY" l'applicativo dovrebbe dare la possibilità di schiacciare un pulsante che in automatico stampa tutti i documenti necessari
-- Duplicazione di ordini. Utile per duplicare le spedizioni registrate in valuta estera che non vanno contabilizzate. Duplicarle applicando un tasso di cambio specificato dall'utente.
+At present the application is still in working progress but can already be used to create a consistent dataset of outgoing orders (sales and sampling) and to quickly create documentation (avoiding manual creation, slow and fallacious).
+
+FUNCTIONS STILL TO IMPLEMENT
+- Inventory Tracking: Record the stock levels. Register the values of the last inventory. By entering all incoming and outgoing movements, stock availability should always be up to date. This would allow the application to provide real-time information to management about availability.
+
+- Currency management: Create a way to handle order in different currency
+
+- Supplies: Register the supplies in a consistent way
+
 
 BHPC MANAGER 1.5
+First version stable enough and testable even by third-party users. Below I will describe the working functions of the application.
+The application consists of 5 main TABs that allow you to navigate through the main functions.
+CONTROL BOARD - A control center for incoming and outgoing shipments of BHPC products.
+SHIPMENT DETAILS - A panel where you can view and modify the logistical and generic details of an order.
+ORDERED PRODUCTS - Panel where you can enter and/or view the products belonging to the selected order.
+WAREHOUSE (not yet available)
+ADMINISTRATION - Some simple administration functions such as selecting the data saving folder.
+SYNCHRONIZATION SYSTEM (Still in testing phase, but seemingly functional)
 
-Prima versione abbastanza stabile e testabile anche da utenti terzi. Qua di seguito descriverò le funzioni funzionanti dell'applicativo.
+The Excel application is designed to be used as a client that connects to a "database server" to work with data. This approach is very useful because it allows multiple users to simultaneously use their own copy of the client and manipulate the data on the server, always with updated data (also from other users).
 
-L'applicativo si forma di 5 TAB principali che permettono di muoversi tra le principali funzioni.
-CONTROL BOARD - Un centro di controllo delle spedizioni in entrata e in uscita dei prodotti BHPC
-ORDER DETAILS - Un pannello dove poter prendere visiione e modificare i dettagli logistici e generici di un ordine BHPC
-ORDERED PRODUCTS - Pannello dove inserire e/o visuaìlizzare i prodotti facente parte dell'ordine selezionato
-WAREHOUSE(non ancora disponibile)
-ADMINISTRATION - alcune semplici funzioni di amministrazione come la selezione della cartella di salvataggio dei dati
+NOTE: there's also a version of the application without data synchronization system. This version is easier to manage and is recommended for those who do not work in teams.
 
-SISTEMA DI SINCRONIZZAZIONE (Ancora in fase di test, ma apparentemente funzionante)
-- L'applicativo excel è studiato per essere utilizzato come un client che si connette a un "database server" per lavorare i dati. Questo approccio è molto utile perchè permette a più utenti contemporaneamente di utilizzare una propria copia del client e manipolare i dati su server restando sempre con dati aggiornati (anche da altri utenti)
-- Dalla control board è possibile effettuare delle sincronizzazioni manuali che comprendono allo stato attuale il sync di:
-  - Gli ordini, file order_data
-  - I prodotti degli ordini, file sales_data
-  - I clienti, tabella client_lookup
-- E' stato inoltre implementato un sistema di sincronizzazione a tempo, preimpostato a 3 minuti di delay tra un aggiornamento e l'altro
-- Infine ogni qual volta un utente effettua operazioni che modificano i dataset lato client le stesse modifiche vengono riportate nei files lato server in modo da renderle disponibili a tutti gli altri utenti.
+From the control board, it is possible to perform manual synchronizations which currently include syncing:
+Orders, order_data file.
+Products of orders, sales_data file.
+Customers, client_lookup table.
+A time synchronization system has also been implemented, preset to a 3-minute delay between updates.
+Finally, whenever a user performs operations that modify the client-side datasets, the same changes are reflected in the server-side files to make them available to all other users.
 
 CONTROL BOARD
-- Permette di tenere traccia degli ordini BHPC sia in entrata che in uscita
-- La tabella permette il filtraggio delle spedizioni per:
-  - Cliente
-  - Stato dell'ordine
-- Dovrebbe permettere a chi si occupa degli ordini una maggiore consapevolezza di ciò che sta succedendo e delle cose da fare
+Allows tracking of BHPC orders both incoming and outgoing.
+The table allows filtering shipments by:
+Customer
+Order status
+It should provide order managers with greater awareness of what is happening and what needs to be done.
 
 ORDER DETAILS
-- Qui è possibile inserire qualsiasi dettaglio relativo all'ordine.
-- Di conseguenza è possibile anche recuperare tali informazioni in un interfaccia user friendly (modifiche alla UI della tab ORDER DETAILS sono previste nelle prossime release)
-- Sono previste tutta una serie di celle NOTE che danno la possibilità all'utente di prendere appunti e legarli all'ordine in maniera tale da non dimenticare nulla.
-- E' stata implementata una status bar per permettere una visione immediata dello stato dell'ordine, di ciò che stato già fatto e di cosa invece dev'essere ancora fatto prima di poter spedire.
+Here you can enter any detail related to the order.
+Consequently, it is also possible to retrieve this information in a user-friendly interface (UI changes to the ORDER DETAILS tab are planned for upcoming releases).
+There are a series of NOTE cells that allow the user to take notes and link them to the order so that nothing is forgotten.
+A status bar has been implemented to provide an immediate view of the order status, what has already been done, and what still needs to be done before shipping.
+
+ORDERED PRODUCTS
+In this section, there is an entry form for entering the references ordered by customers or those received from the supplier.
+It has been designed to be as user-friendly as possible while also considering the possibility of products sold at full price, others at discounted prices, and still others free of charge (FOC).
+It is possible that further improvements will be implemented in the future to make the entry of new shipments even more immediate.
 
 ORDERED PRODUCTS
 - In questa sezione è presente una entry form per l'inserimento delle referenze ordinate dai clienti o quelle ricevute dal fornitore.
