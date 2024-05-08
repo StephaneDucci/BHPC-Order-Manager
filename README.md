@@ -55,3 +55,8 @@ ORDERED PRODUCTS
 - In this section, there is an entry form for entering the references ordered by customers or those received from the supplier.
 - It has been designed to be as user-friendly as possible while also considering the possibility of products sold at full price, others at discounted prices, and still others free of charge (FOC).
 - It is possible that further improvements will be implemented in the future to make the entry of new shipments even more immediate.
+
+
+bhpc_manager_v1.2.xlsm
+
+This is the file with data and client all in one file. Much more reactive and efficient. Best solution for solo workers.
