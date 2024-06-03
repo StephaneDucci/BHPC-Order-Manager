@@ -9,11 +9,20 @@ The currently operational functions (albeit in testing) include:
 At present the application is still in working progress but can already be used to create a consistent dataset of outgoing orders (sales and sampling) and to quickly create documentation (avoiding manual creation, slow and fallacious).
 
 FUNCTIONS STILL TO IMPLEMENT
-- Inventory Tracking: Record the stock levels. Register the values of the last inventory. By entering all incoming and outgoing movements, stock availability should always be up to date. This would allow the application to provide real-time information to management about availability.
 
-- Currency management: Create a way to handle order in different currency
+IDEE BHPC MANAGER 1.5
+Fare in modo che DGN e PL siano connessi:
+-	Il # di fibreboard bozes deve risultare da un somma se fatto sui cartoni della PL
+-	Il # di bottles deve risultare da una “somma se” sui pieces della PL
 
-- Supplies: Register the supplies in a consistent way
+-	Non so se è una soluzione ma si potrebbe pensare di fare lo stesso anche con i pesi e i CBM. Ossia un somma se sullo sku code, esempio:
+
+o	Sommare il Net Weight solo se lo sku code è O(P05008;P05009)
+o	La formula andrebbe impostata da VBA quando si crea il DGN final model.
+
+-	Bloccare le celle da proteggere
+In questo modo se si modifica la PL le modifiche vengono automaticamente riportate sul DGN
+
 
 
 BHPC MANAGER 1.5
