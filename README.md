@@ -1,4 +1,4 @@
-# BHPC Manager 4.1
+# BHPC Manager
 
 **BHPC Manager** is a comprehensive solution for overseeing a substantial part of the procedures involved in the distribution of our foreign partner's products across Europe and Latin America.
 
