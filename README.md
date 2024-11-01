@@ -18,7 +18,7 @@
 #### Warehouse Control Features
 
 - **Warehouse Section**: Added a dedicated section to track product movements within the warehouse.
-- **Product Management Userform**: Userform for managing BHPC products:
+- **Product Management Userform**: Userform for managing Perfumes products:
   - Create or modify products.
   - Create/modify bill of materials (BOM) for composite products, such as gift sets.
   - Define and assign risk classes to hazardous products for correct automatic generation of multimodal forms.
