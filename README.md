@@ -1,71 +1,51 @@
-# BHPC-Manager
-It's a one-stop center to oversee a significant portion of the procedures related to the distribution process of our foreign partner's products in Europe and Latin America.
-The currently operational functions (albeit in testing) include:
-- Guided procedure for saving a sales or sampling order (orders related to supplies can also be registered, but some fields are still inconsistent).
-- Ability for the user to input products related to sales/sampling, specifying selling price or if they are F.O.C. (free of charge).
-- Once the products are loaded into the order, it is possible to automatically generate the main documents: PROFORMA INVOICE, PACKING LIST, and MULTIMODAL FORM.
-- Finally, it will be possible to track the order status and numerous other (mostly logistical) parameters useful at the time of drafting periodic reports to be presented to the partner.
+# BHPC Manager 4.1
 
-At present the application is still in working progress but can already be used to create a consistent dataset of outgoing orders (sales and sampling) and to quickly create documentation (avoiding manual creation, slow and fallacious).
+**BHPC Manager** is a comprehensive solution for overseeing a substantial part of the procedures involved in the distribution of our foreign partner's products across Europe and Latin America.
 
-FUNCTIONS STILL TO IMPLEMENT
+### Version 4.1 Features
 
-IDEE BHPC MANAGER 1.5
-Fare in modo che DGN e PL siano connessi:
--	Il # di fibreboard bozes deve risultare da un somma se fatto sui cartoni della PL
--	Il # di bottles deve risultare da una “somma se” sui pieces della PL
+#### Order and Shipment Control Features
 
--	Non so se è una soluzione ma si potrebbe pensare di fare lo stesso anche con i pesi e i CBM. Ossia un somma se sullo sku code, esempio:
+- **Order Creation**: Create sales, sampling, and supply orders.
+- **Product Line Input**: Add products to orders, specifying if they are for sale, discounted, or offered as F.O.C. (free of charge).
+- **Shipment Details Userform**: A dedicated userform to view details of each shipment (whether supply, sampling, or sales), allowing users to save all logistical details, preparation status, payment status, import/export document drafting status, and additional notes.
+- **Currency Conversion**: Convert orders in foreign currencies to euros.
+- **Automatic Document Generation**: Automatically generate key documents for customers and transporters, including:
+  - **Invoice**
+  - **Packing List**
+  - **Multimodal Form**
 
-o	Sommare il Net Weight solo se lo sku code è O(P05008;P05009)
-o	La formula andrebbe impostata da VBA quando si crea il DGN final model.
+#### Warehouse Control Features
 
--	Bloccare le celle da proteggere
-In questo modo se si modifica la PL le modifiche vengono automaticamente riportate sul DGN
+- **Warehouse Section**: Added a dedicated section to track product movements within the warehouse.
+- **Product Management Userform**: Userform for managing BHPC products:
+  - Create or modify products.
+  - Create/modify bill of materials (BOM) for composite products, such as gift sets.
+  - Define and assign risk classes to hazardous products for correct automatic generation of multimodal forms.
+- **Production Management**: Execute production orders and preview production to check the availability of all necessary components for composite products.
+- **Stock Availability Tracking**: Track product availability in the warehouse to quickly determine if customer demands can be met.
+- **Gift Set Production**: Implemented functionality to execute the production of gift sets.
 
+#### Administration Features
 
+- **Administration Section Update**: Completely updated the administration section.
+- **Data Import/Export**: Allow users to export and import data as needed.
+- **Database Access**: Allow users direct access to databases for making corrections directly to records.
 
-BHPC MANAGER 1.5
-First version stable enough and testable even by third-party users. Below I will describe the working functions of the application.
-The application consists of 5 main TABs that allow you to navigate through the main functions.
+#### Customers / Suppliers Features
 
-CONTROL BOARD - A control center for incoming and outgoing shipments of BHPC products.
-SHIPMENT DETAILS - A panel where you can view and modify the logistical and generic details of an order.
-ORDERED PRODUCTS - Panel where you can enter and/or view the products belonging to the selected order.
-WAREHOUSE (not yet available)
-ADMINISTRATION - Some simple administration functions such as selecting the data saving folder.
-SYNCHRONIZATION SYSTEM (Still in testing phase, but seemingly functional)
+- **Customer/Supplier Management Userform**: Implemented a userform to create or modify customer and supplier details.
 
-The Excel application is designed to be used as a client that connects to a "database server" to work with data. This approach is very useful because it allows multiple users to simultaneously use their own copy of the client and manipulate the data on the server, always with updated data (also from other users).
+### Future Features
 
-NOTE: there's also a version of the application without data synchronization system. This version is easier to manage and is recommended for those who do not work in teams.
+#### Planned Features for Future Versions
 
-From the control board, it is possible to perform manual synchronizations which currently include syncing:
-Orders, order_data file.
-Products of orders, sales_data file.
-Customers, client_lookup table.
-A time synchronization system has also been implemented, preset to a 3-minute delay between updates.
-Finally, whenever a user performs operations that modify the client-side datasets, the same changes are reflected in the server-side files to make them available to all other users.
+- **Bug Fixes and Exception Handling**: Implement comprehensive bug fixes and exception management to enhance system stability.
+- **UI/UX Improvements**: Improve various aspects of the user interface and user experience to make the application more intuitive and efficient.
+- **Migration to Access Database**: Transition to an Access database for application data. As the application has expanded and grown more complex, the original tables have become too large and challenging to manage. The plan is to implement a dedicated Access database and use VBA to facilitate data access (both read and write).
 
-CONTROL BOARD
-Allows tracking of BHPC orders both incoming and outgoing.
-The table allows filtering shipments by:
-Customer
-Order status
-It should provide order managers with greater awareness of what is happening and what needs to be done.
+### Status and Usage
 
-ORDER DETAILS
-Here you can enter any detail related to the order.
-Consequently, it is also possible to retrieve this information in a user-friendly interface (UI changes to the ORDER DETAILS tab are planned for upcoming releases).
-There are a series of NOTE cells that allow the user to take notes and link them to the order so that nothing is forgotten.
-A status bar has been implemented to provide an immediate view of the order status, what has already been done, and what still needs to be done before shipping.
-
-ORDERED PRODUCTS
-- In this section, there is an entry form for entering the references ordered by customers or those received from the supplier.
-- It has been designed to be as user-friendly as possible while also considering the possibility of products sold at full price, others at discounted prices, and still others free of charge (FOC).
-- It is possible that further improvements will be implemented in the future to make the entry of new shipments even more immediate.
+Currently, the application is still a work in progress but is functional enough to be used for creating a consistent dataset of outgoing orders (sales and sampling) and for quickly generating documentation. This eliminates the need for manual, slow, and error-prone document creation processes.
 
 
-bhpc_manager_v1.2.xlsm
-
-This is the file with data and client all in one file. Much more reactive and efficient. Best solution for solo workers.
