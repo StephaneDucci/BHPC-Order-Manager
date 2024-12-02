@@ -52,9 +52,9 @@
 #### Planned Features for Future Versions
 
 - **Bug Fixes and Exception Handling**: Implement comprehensive bug fixes and exception management to enhance system stability.
-- **UI/UX Improvements**: Improve various aspects of the user interface and user experience to make the application more intuitive and efficient.
+- **UI/UX Improvements**: Improve various aspects of the user interface and user experience to make the application more intuitive and efficient. DONE v5.0
 - **Migration to Access Database**: Transition to an Access database for application data. As the application has expanded and grown more complex, the original tables have become too large and challenging to manage. The plan is to implement a dedicated Access database and use VBA to facilitate data access (both read and write).
-- **Product Management Userform Enhancement**: Modify the userform for product management to include warehouse details, such as stock levels and average cost.
+- **Product Management Userform Enhancement**: Modify the userform for product management to include warehouse details, such as stock levels and average cost.DONE v5.0
 
 ### Status and Usage
 
