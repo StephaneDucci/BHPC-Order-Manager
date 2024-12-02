@@ -2,6 +2,17 @@
 
 **Perfumes Orders Manager** is a comprehensive solution for overseeing a substantial part of the procedures involved in the distribution of our foreign partner's products across Europe and Latin America.
 
+### Version 5.0 Features
+
+- **Complete Product Management through GUI**: It is now possible to manage product logistics details in an easy and intuitive manner for the user.
+- **Comprehensive Bill of Materials Management for Composite Products (Giftsets)**: Full management of bill of materials for composite products.
+- **Risk Class Management for Hazardous Products**: Complete management of risk classes for products classified as hazardous.
+  - These features enable complete and autonomous management for users without knowledge of VBA and programming. Creating new products and/or giftsets will not render the document creation code (particularly for the Multimodal form for hazardous goods) obsolete.
+- **Improved UI**: Enhanced user interface, making it more visually appealing, intuitive, and consistent in theme.
+- **Updated and Optimized ADMIN Section**: Completed and optimized the ADMIN section, including commands for data import/export/deletion.
+- **Database Reset Capability**: The database can now be entirely rebuilt from scratch by the user.
+- **Minor Bug Fixes**: Fixed several minor bugs to improve system stability.
+
 ### Version 4.1 Features
 
 #### Order and Shipment Control Features
