@@ -53,8 +53,9 @@
 
 - **Bug Fixes and Exception Handling**: Implement comprehensive bug fixes and exception management to enhance system stability. DONE v5.0
 - **UI/UX Improvements**: Improve various aspects of the user interface and user experience to make the application more intuitive and efficient. DONE v5.0
-- **Migration to Access Database**: Transition to an Access database for application data. As the application has expanded and grown more complex, the original tables have become too large and challenging to manage. The plan is to implement a dedicated Access database and use VBA to facilitate data access (both read and write).
 - **Product Management Userform Enhancement**: Modify the userform for product management to include warehouse details, such as stock levels and average cost.DONE v5.0
+
+- **Migration to Access Database**: When the databases grow significantly and there is a need for multi-user usage, the transition to an Access database will be implemented. The plan is to use a dedicated Access database and VBA to facilitate data access (both read and write).
 
 ### Status and Usage
 
