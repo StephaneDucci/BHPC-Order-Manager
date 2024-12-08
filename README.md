@@ -32,49 +32,69 @@
 
 
 
-### Version 4.1 Features
+[4.1] - 2024-07-20
 
-#### Order and Shipment Control Features
+Added
 
-- **Order Creation**: Create sales, sampling, and supply orders.
-- **Product Line Input**: Add products to orders, specifying if they are for sale, discounted, or offered as F.O.C. (free of charge).
-- **Shipment Details Userform**: A dedicated userform to view details of each shipment (whether supply, sampling, or sales), allowing users to save all logistical details, preparation status, payment status, import/export document drafting status, and additional notes.
-- **Currency Conversion**: Convert orders in foreign currencies to euros.
-- **Automatic Document Generation**: Automatically generate key documents for customers and transporters, including:
-  - **Invoice**
-  - **Packing List**
-  - **Multimodal Form**
+Order and Shipment Control Features:
 
-#### Warehouse Control Features
+Order Creation: Create sales, sampling, and supply orders.
 
-- **Warehouse Section**: Added a dedicated section to track product movements within the warehouse.
-- **Product Management Userform**: Userform for managing Perfumes products:
-  - Create or modify products.
-  - Create/modify bill of materials (BOM) for composite products, such as gift sets.
-  - Define and assign risk classes to hazardous products for correct automatic generation of multimodal forms.
-- **Production Management**: Execute production orders and preview production to check the availability of all necessary components for composite products.
-- **Stock Availability Tracking**: Track product availability in the warehouse to quickly determine if customer demands can be met.
-- **Gift Set Production**: Implemented functionality to execute the production of gift sets.
+Product Line Input: Add products to orders, specifying if they are for sale, discounted, or offered as F.O.C. (free of charge).
 
-#### Administration Features
+Shipment Details Userform: A dedicated userform to view details of each shipment (whether supply, sampling, or sales), allowing users to save all logistical details, preparation status, payment status, import/export document drafting status, and additional notes.
 
-- **Administration Section Update**: Completely updated the administration section.
-- **Data Import/Export**: Allow users to export and import data as needed.
-- **Database Access**: Allow users direct access to databases for making corrections directly to records.
+Currency Conversion: Convert orders in foreign currencies to euros.
 
-#### Customers / Suppliers Features
+Automatic Document Generation: Automatically generate key documents for customers and transporters, including:
 
-- **Customer/Supplier Management Userform**: Implemented a userform to create or modify customer and supplier details.
+Invoice
 
-### Future Features
+Packing List
 
-#### Planned Features for Future Versions
+Multimodal Form
 
-- **Bug Fixes and Exception Handling**: Implement comprehensive bug fixes and exception management to enhance system stability. DONE v5.0
-- **UI/UX Improvements**: Improve various aspects of the user interface and user experience to make the application more intuitive and efficient. DONE v5.0
-- **Product Management Userform Enhancement**: Modify the userform for product management to include warehouse details, such as stock levels and average cost.DONE v5.0
+Warehouse Control Features:
 
-- **Migration to Access Database**: When the databases grow significantly and there is a need for multi-user usage, the transition to an Access database will be implemented. The plan is to use a dedicated Access database and VBA to facilitate data access (both read and write).
+Warehouse Section: Added a dedicated section to track product movements within the warehouse.
+
+Product Management Userform: Userform for managing Perfumes products:
+
+Create or modify products.
+
+Create/modify bill of materials (BOM) for composite products, such as gift sets.
+
+Define and assign risk classes to hazardous products for correct automatic generation of multimodal forms.
+
+Production Management: Execute production orders and preview production to check the availability of all necessary components for composite products.
+
+Stock Availability Tracking: Track product availability in the warehouse to quickly determine if customer demands can be met.
+
+Gift Set Production: Implemented functionality to execute the production of gift sets.
+
+Administration Features:
+
+Administration Section Update: Completely updated the administration section.
+
+Data Import/Export: Allow users to export and import data as needed.
+
+Database Access: Allow users direct access to databases for making corrections directly to records.
+
+Customers/Suppliers Features:
+
+Customer/Supplier Management Userform: Implemented a userform to create or modify customer and supplier details.
+
+Future Features (Planned for Future Versions)
+
+Bug Fixes and Exception Handling: Implement comprehensive bug fixes and exception management to enhance system stability. DONE v5.0
+
+UI/UX Improvements: Improve various aspects of the user interface and user experience to make the application more intuitive and efficient. DONE v5.0
+
+Product Management Userform Enhancement: Modify the userform for product management to include warehouse details, such as stock levels and average cost. DONE v5.0
+
+Migration to Access Database: When the databases grow significantly and there is a need for multi-user usage, the transition to an Access database will be implemented. The plan is to use a dedicated Access database and VBA to facilitate data access (both read and write).
+
+
 
 ### Status and Usage
 
