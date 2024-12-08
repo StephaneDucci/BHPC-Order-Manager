@@ -2,16 +2,35 @@
 
 **Perfumes Orders Manager** is a comprehensive solution for overseeing a substantial part of the procedures involved in the distribution of our foreign partner's products across Europe and Latin America.
 
-### Version 5.0 Features
+# Changelog
 
-- **Complete Product Management through GUI**: It is now possible to manage product logistics details in an easy and intuitive manner for the user.
-- **Comprehensive Bill of Materials Management for Composite Products (Giftsets)**: Full management of bill of materials for composite products.
-- **Risk Class Management for Hazardous Products**: Complete management of risk classes for products classified as hazardous.
-  - These features enable complete and autonomous management for users without knowledge of VBA and programming. Creating new products and/or giftsets will not render the document creation code (particularly for the Multimodal form for hazardous goods) obsolete.
-- **Improved UI**: Enhanced user interface, making it more visually appealing, intuitive, and consistent in theme.
-- **Updated and Optimized ADMIN Section**: Completed and optimized the ADMIN section, including commands for data import/export/deletion.
-- **Database Reset Capability**: The database can now be entirely rebuilt from scratch by the user.
-- **Minor Bug Fixes**: Fixed several minor bugs to improve system stability.
+## [5.1] - 2024-12-08
+### Added
+- **Cell Protection Toggle**: Added the ability to lock and unlock protected cells, providing users with greater control over data editing and security.
+
+### Fixed
+- **Minor Bug Fixes**: Resolved several minor bugs to improve system stability.
+
+---
+
+## [5.0] - 2024-11-04
+### Added
+- **Complete Product Management through GUI**: Easily manage product logistics details with an intuitive graphical interface designed for user convenience.
+- **Comprehensive Bill of Materials Management for Composite Products (Giftsets)**: Fully manage the bill of materials for composite products.
+- **Risk Class Management for Hazardous Products**: Complete risk class management for products classified as hazardous.
+- **Enhanced Autonomy for Non-Technical Users**: Tools enabling users without VBA or programming knowledge to create products and/or giftsets without breaking the document creation code, including the Multimodal form for hazardous goods.
+
+### Improved
+- **User Interface**: A visually appealing, intuitive, and consistent UI theme.
+
+### Optimized
+- **ADMIN Section**: Fully optimized with new commands for data import/export/deletion.
+- **Database Reset Capability**: Users can now rebuild the database from scratch.
+
+### Fixed
+- **Minor Bug Fixes**: Resolved several minor bugs to improve stability.
+
+
 
 ### Version 4.1 Features
 
