@@ -76,8 +76,14 @@
 
 ## Status and Usage
 
-The application is a work in progress but is already functional enough to:
-- Create a consistent dataset of outgoing orders (sales and sampling).
-- Quickly generate key documentation, eliminating the need for manual, slow, and error-prone processes.
+The application is fully functional and can be used efficiently for the following sections:
+
+- **HOME**: Create, modify, and delete supply and sales orders.
+- **BASKET**: Manage order contents, including the production of composite products (giftsets).
+- **WAREHOUSE**: Track warehouse operations, including incoming and outgoing stock movements.
+- **DOCS**: Generate sales documentation, including invoices, packing lists, and multimodal forms for hazardous goods.
+
+> **Note**: The **REPORTING** section is currently under development and remains a work in progress.
+
 
 The **Perfumes Orders Manager** is continuously evolving to provide a better experience for users and address the growing needs of the business.
