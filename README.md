@@ -8,6 +8,18 @@ APPLICATION PREVIEW **https://youtu.be/yMHvTjarY9U**
 
 ## Changelog
 
+[5.2] - 2024-12-28
+
+Fixed
+
+Minor Bug Fixes and Exception Handling: Addressed several minor bugs and resolved small exceptions that previously caused errors.
+
+Improved
+
+Intrastat Value Calculation: Completely revamped the calculation of Intrastat values. The results are now error-free and capable of handling any type of gift set, provided the product master data is properly maintained.
+
+Data Visualization: Improved data display using a ListBox for enhanced clarity and usability.
+
 ### [5.1] - 2024-12-08
 #### Added
 - **Cell Protection Toggle**: Added the ability to lock and unlock protected cells, providing users with greater control over data editing and security.
